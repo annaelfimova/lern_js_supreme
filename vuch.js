@@ -43,14 +43,68 @@
 // })
 
 //4
-let elem = document.querySelector('#elem');
-let btn = document.querySelector('#btn');
-let border = elem.style.border;
-btn.addEventListener('click', function(){
-    let width = elem.style.borderWidth;
-    let type = elem.style.borderStyle;
-    let color = elem.style.borderColor;
-    console.log('Толщина границы: ' + width + '\nТип границы: ' + type + '\nЦвет границы: ' + color);
-})
+// let elem = document.querySelector('#elem');
+// let btn = document.querySelector('#btn');
+// let border = elem.style.border;
+// btn.addEventListener('click', function(){
+//     let width = elem.style.borderWidth;
+//     let type = elem.style.borderStyle;
+//     let color = elem.style.borderColor;
+//     console.log('Толщина границы: ' + width + '\nТип границы: ' + type + '\nЦвет границы: ' + color);
+// })
 
 //5
+// let elem = document.querySelector('#elem');
+// let btn = document.querySelector('#btn');
+// let btn2 = document.querySelector('#btn2');
+// btn.addEventListener('click', function(){
+//     elem.style.display = '';
+// })
+
+// btn2.addEventListener('click', function(){
+//     elem.style.display = 'none';
+// })
+
+//5.2
+// let elem = document.querySelector('#elem');
+// let btn = document.querySelector('#btn');
+// let btn2 = document.querySelector('#btn2');
+// btn.addEventListener('click', function(){
+//     elem.style.backgroundColor = 'green';
+// })
+
+// btn2.addEventListener('click', function(){
+//     elem.style.backgroundColor = 'red';
+// })
+
+//6
+// let elem = document.querySelector('#elem');
+// elem.style.cssText = `
+// 	width: 100px;
+// 	height: 100px;
+// 	margin: 10px auto;
+//     color: red;
+// `;
+
+//8
+// let elem = document.querySelector('#elem');
+// let btn = document.querySelector('#btn');
+// btn.addEventListener('click', function(){
+//     let computedStyle = getComputedStyle(elem);
+//     console.log(computedStyle.width);
+//     console.log(computedStyle.height);
+// })
+
+//8.2
+// let elem = document.querySelector('#elem');
+// let btn = document.querySelector('#btn');
+// btn.addEventListener('click', function(){
+//     let computedStyle = getComputedStyle(elem);
+//     elem.style.width = parseInt(computedStyle.width) * 2 + 'px';
+//     elem.style.height = parseInt(computedStyle.height) * 2 + 'px';
+// })
+
+//9
+let elem = document.querySelector('#elem');
+let computedStyle = getComputedStyle(elem);
+console.log(computedStyle.fontSize); 
